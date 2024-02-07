@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = buildozer==1.5.0,certifi==2023.11.17,charset-normalizer==3.3.2,contourpy==1.2.0,cycler==0.12.1,distlib==0.3.8,docutils==0.20.1,filelock==3.13.1,fonttools==4.47.2,idna==3.6,Kivy==2.3.0,kivy-deps.angle==0.4.0,kivy-deps.glew==0.3.1,kivy-deps.sdl2==0.7.0,Kivy-Garden==0.1.5,kivymd==1.2.0,kiwisolver==1.4.5,matplotlib==3.8.2,numpy,opencv-python==4.9.0.80,packaging==23.2,pexpect==4.9.0,pillow==10.2.0,platformdirs==4.2.0,ptyprocess==0.7.0,Pygments==2.17.2,pyparsing==3.1.1,pypiwin32==223,python-dateutil==2.8.2,pywin32==306,requests==2.31.0,scipy==1.12.0,sh==2.0.6,six==1.16.0,urllib3==2.1.0,virtualenv==20.25.0
+requirements = buildozer==1.5.0,certifi==2023.11.17,charset-normalizer==3.3.2,contourpy==1.2.0,cycler==0.12.1,distlib==0.3.8,docutils==0.20.1,filelock==3.13.1,fonttools==4.47.2,idna==3.6,Kivy==2.3.0,kivy-deps.angle==0.4.0,kivy-deps.glew==0.3.1,kivy-deps.sdl2==0.7.0,Kivy-Garden==0.1.5,kivymd==1.2.0,kiwisolver==1.4.5,matplotlib==3.8.2,numpy,opencv-python==4.9.0.80,packaging==23.2,pexpect==4.9.0,pillow==10.2.0,platformdirs==4.2.0,ptyprocess==0.7.0,Pygments==2.17.2,pyparsing==3.1.1,pypiwin32==223,python-dateutil==2.8.2,pywin32==306,requests==2.31.0,scipy,sh==2.0.6,six==1.16.0,urllib3==2.1.0,virtualenv==20.25.0
 
 
 # (str) Custom source folders for requirements
