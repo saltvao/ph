@@ -1,0 +1,119 @@
+#:import utils kivy.utils
+
+<ContainerF>
+    rows:3
+    camera: camera
+    quantity: quantity
+    value: value
+    desired: desired
+    answer: answer
+    insert: insert
+    inputs: inputs
+    box1: boxF
+    box2:boxS
+    size: 1024, 768
+    BoxLayout:
+        id: boxS
+        size: root.width,root.height
+        orientation: 'vertical'
+        opacity:0
+        disabled:True
+        FloatLayout:
+            Scatter:
+                do_scale: False
+                do_translation: False
+                Camera:
+                    id: camera
+                    index: 0
+                    pos_hint: {'center_x': 0,'center_y': 0.5}
+                    resolution: (480, 768)
+                    size: (480, 768)
+                    allow_stretch: True
+                    keep_ratio: True
+                    size_hint:None,None
+                MDRectangleFlatButton:
+                    size_hint: 1, .5
+                    id: cameraBtn
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: utils.get_color_from_hex('#A76EDE')
+                    text:"Main menu"
+                    on_release:
+                        root.cameraFunc()
+
+    BoxLayout:
+        id: boxF
+        size: root.width,root.height
+        orientation: 'vertical'
+        BoxLayout:
+            canvas.before:
+                Color:
+                    rgba:utils.get_color_from_hex('#8255AB')
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint:1, 0.4
+            Label:
+                text:"PhyS"
+                font_size: 30
+        BoxLayout:
+            id: inputs
+            size_hint:1, 2
+            orientation:"vertical"
+            MDTextField:
+                hint_text: "desired"
+                pos_hint: {'center_x': .5,'center_y': 0.5}
+                size_hint: 0.75, .75
+                id: desired
+                font_size: 40
+            MDTextField:
+                hint_text: "quantity"
+                pos_hint: {'center_x': .5,'center_y': 0.5}
+                size_hint: 0.75, .75
+                id: quantity
+                font_size: 40
+            MDTextField:
+                hint_text: "value"
+                pos_hint: {'center_x': .5,'center_y': 0.5}
+                size_hint: 0.75, .75
+                id: value
+                font_size: 40
+        Label:
+            id: answer
+            font_size: 40
+            color: utils.get_color_from_hex('#ffffff')
+        AnchorLayout:
+            pos_hint: {'center_x': .5,'center_y': 0.5}
+            size_hint: 0.75, 1
+            MDRectangleFlatButton:
+                size_hint: 1, .5
+                id: insert
+                theme_text_color: "Custom"
+                text_color: "white"
+                line_color: utils.get_color_from_hex('#A76EDE')
+                text:"Insert"
+                on_release:
+                    root.inputValues()
+        AnchorLayout:
+            pos_hint: {'center_x': .5,'center_y': 0.5}
+            size_hint: 0.75, 1
+            MDRectangleFlatButton:
+                size_hint: 1, .5
+                text:"Solve"
+                theme_text_color: "Custom"
+                text_color: "white"
+                line_color: utils.get_color_from_hex('#A76EDE')
+                on_release:
+                    root.appSolver()
+        AnchorLayout:
+            pos_hint: {'center_x': .5,'center_y': 0.5}
+            size_hint: 0.75, 1
+            MDRectangleFlatButton:
+                size_hint: 1, .5
+                id: cameraBtn
+                theme_text_color: "Custom"
+                text_color: "white"
+                line_color: utils.get_color_from_hex('#A76EDE')
+                text:"Camera"
+                on_release:
+                    root.cameraFunc()

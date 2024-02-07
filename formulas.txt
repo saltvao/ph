@@ -1,0 +1,157 @@
+angleVelocity  - угловая скорость
+radius - радиус
+velocity -  скорость
+usualVelocity -
+accelerationVelocity -
+zeroVelocity
+
+distance - расстояние, путь
+time - время
+zeroVelocity начальная (нулевая) скорость
+acceleration - ускорение
+mass - масса
+force - сила
+angle - угол
+frequency - частота
+period - период
+pi - 3,14
+uFriction - коэфф.  трения
+ForceN - сила реакции опоры
+coeff - коэффицент
+deltaX - дельта Х 
+gravity - ускорение свободного падения (Земля)
+moment момент силы
+lenght длина
+density - плотность
+volume - обьем
+pressure - давление
+square - площадь
+heihgt - высота (водного столба)
+work - работа
+power - мощность
+kineticEnergy - кинетическая энергия
+potentialEnergy - потенциальная энергия
+fullEnergy - полная энергия
+pulse - импульс
+сHeat - Удельная теплоёмкость
+heat - Q колво телпа
+temp - температура
+deltaTemp - t1 - t1 
+qHeat - теплота сгорания
+##currentForce - I сила тока
+##voltage = U напряжение 
+##resistance = сопротивление R 
+
+statForce
+dynForce
+energyForce
+
+---
+Все добавленные формулы:
+0
+v =W*R
+V = S/T
+V = V0 + at
+F = am
+S = V0t + at2/2
+5
+---
+fi = s/r
+nu = 1/T
+v = 2piR/t
+V = 2pi R Nu
+w = fi/t
+10
+w = 2pi/T
+w = 2pi*nu
+v = wr
+a = w^2r
+14
+--------
+F = u*N
+F = -kx
+F = mg
+F = am
+p = mv
+19
+-------
+M = F * l
+p = m/v
+P = F/S
+P = pgh
+F=pghS
+25
+----
+F = A/S
+a = mgh
+A = kx^2/2
+N = a/t
+N = FV
+30
+Ek = Mv2/2
+Ep = mgh
+E = Ek + Ep
+Q = cm(dT)
+Q = qm
+35
+------------
+nu = 1/T 
+W = sqrt K/m
+W = sqrt g/l
+T=2pi/w
+---------
+I = U/R
+40
+
+
+var = {1:kin.angularVel.variables,
+		2:kin.usualVel.variables,
+		3:kin.accelerationVel.variables,
+		4:kin.newtonSecondRule.variables,
+		5:kin.accelerationDist.variables,
+		6:cirMot.anglDeg.variables,
+		7:cirMot.FreqPer.variables,
+		8:cirMot.velPer.variables,
+		9:cirMot.velFreq.variables,
+		10:cirMot.velPerAngl.variables,
+		11:cirMot.velPiPer.variables,
+		12:cirMot.velPiNu.variables,
+		13:cirMot.velAngRad.variables,
+		14:cirMot.acellAngleVel.variables,
+		15:din.FricForce.variables,
+		16:din.elasticForce.variables,
+		17:din.GravityForce.variables,
+		18:din.pulse.variables,
+        
+        -1
+		20:stat.momentForce.variables,
+		21:stat.density.variables,
+		22:stat.pressure.variables,
+		23:stat.waterPressure.variables,
+		24:stat.pressureForce.variables,
+		25:stat.archForce.variables,
+		26:enrg.work.variables,
+		27:enrg.gravityWork.variables,
+		28:enrg.elasticWork.variables,
+		29:enrg.power.variables,
+		30:enrg.powerForce.variables,
+		31:enrg.eKin.variables,
+		32:enrg.ePot.variables,
+		33:enrg.fullEnergy.variables,
+		34:enrg.heat.variables,
+		35:enrg.heatBurn.variables,
+		36:osc.frequency.variables,
+		37:osc.wobbleMass.variables,
+		38:osc.wobbleLenght.variables,
+		39:osc.wobblePeriod.variabl
+
+ошибки: 
+velPer
+velFreq
+velAngRad:
+momentForce
+waterPressure
+pressureForce
+work
+wobbleLenght
+wobblePeriod
